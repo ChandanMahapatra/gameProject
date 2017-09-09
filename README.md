@@ -1,2 +1,2 @@
 # gameProject
-School Game Project (12th Grade Computer Science Project)
+School C++ Game Project(12th Grade Computer Science Project)
