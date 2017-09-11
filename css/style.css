@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+  margin: 20px;
+  background: #DEDFE3;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  color: #1C458B;
+  font-size: 6em;
+  font-family: "Bungee Shade";
+}
+
+h2 {
+  color: #1F2D45;
+  font-size: 1.2em;
+  font-family: "Press Start 2P";
+}
+
+h3 {
+  color: #1F2D45;
+  font-size: 1.4em;
+  font-family: "Press Start 2P";
+  margin-bottom: 40px;
+  line-height: 1.6em;
+}
+
+h4 {
+  color: #1F2D45;
+  font-size: 1.2em;
+  font-family: "Press Start 2P";
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #1F2D45;
+  text-align: left;
+  font-size: 1em;
+  font-family: "Press Start 2P";
+}
+
+li {
+  color: #1F2D45;
+  font-size: 1em;
+  font-family: "Press Start 2P";
+  margin: 5px;
+}
+
+/* Game Header Section */
+
+header {
+  margin-top: 80px;
+}
+
+/* Game Menu Section */
+#game-menu {
+  margin-top: 80px;
+}
+
+#game-menu ul {
+  list-style: none;
+}
+
+.menu-button {
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+
+.menu-button a {
+  padding: 20px;
+  color: #99B5E2;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #1C458B;
+  -webkit-box-shadow: -7px 7px 4px 4px #99B5E2;
+  -moz-box-shadow: -7px 7px 4px 4px #99B5E2;
+  box-shadow: -7px 7px 4px 4px #99a5E2;
+}
+
+
+.menu-button a:hover {
+  padding: 20px;
+  color: #CDDBF1;
+  text-decoration: none;
+  background-color: #3265BA;
+  -webkit-box-shadow: 0px 2px 2px 2px #99B5E2;
+  -moz-box-shadow: 0px 2px 2px 2px #99B5E2;
+  box-shadow: 0px 2px 2px 2px #99a5E2;
+}
+
+.menu-button a:active {
+  border-style: 4px solid;
+  border-color: linear-gradient(to right, #E040FB, #00BCD4);
+  background: -webkit-linear-gradient(30deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@-webkit-keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Game Instructions Section */
+
+#game-instructions {
+  margin-top: 80px;
+  display: none;
+}
+
+
+#game-instructions ul {
+  list-style: none;
+}
+
+#game-instructions .menu-button{
+  color: #1F2D45;
+  font-size: 1em;
+  font-family: "Press Start 2P";
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+/* Game Section */
+
+#main-game {
+  margin-top: 20px;
+}
+
+#main-game .menu-button{
+  color: #1F2D45;
+  font-size: 1em;
+  font-family: "Press Start 2P";
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#PlayerStats {
+  display: none;
+}
+
+#Player1Turn {
+  display: none;
+}
+
+#Player2Turn {
+  display: none;
+}
+
+.player {
+  margin-top: 80px;
+}
+
+.p1Name h3{
+  color: #239088;
+}
+
+.p1Health {
+  display: inline-block;
+  width: 200px; 
+  height: 30px; 
+  margin:auto;
+  vertical-align: middle;
+  background: #44D560; 
+}
+
+/*
+.p1Health {
+  color: #239088;
+} */ 
+
+.p1Attack {
+  color: #239088;
+}
+
+.p1Defence {
+  color: #239088;
+}
+
+.p1Money {
+  color: #239088;
+}
+
+.p1Wall {
+  color: #239088;
+}
+
+.p1Soldier {
+  color: #239088;
+}
+
+.p1Industry {
+  color: #239088;
+}
+
+.p1Farm {
+  color: #239088;
+}
+
+.Turn-Menu h3{
+  margin-top: 60px;
+}
+
+.Turn-Menu ul{
+  list-style: none;
+  padding: 0;
+  margin-top: -10px;
+}
+
+.p2Name h3{
+  color: #9F62AF;
+}
+
+.p2Health {
+  display: inline-block;
+  width: 200px; 
+  height: 30px; 
+  margin:auto;
+  vertical-align: middle;
+  background: #44D560; 
+}
+
+/*
+.p2Health {
+   color: #9F62AF;
+}*/
+
+.p2Attack {
+  color: #9F62AF;
+}
+
+.p2Defence {
+  color: #9F62AF;
+}
+
+.p2Money {
+  color: #9F62AF;
+}
+
+.p2Wall {
+  color: #9F62AF;
+}
+
+.p2Soldier {
+  color: #9F62AF;
+}
+
+.p2Industry {
+  color: #9F62AF;
+}
+
+.p2Farm {
+  color: #9F62AF;
+}

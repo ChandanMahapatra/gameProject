@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>School Game Project - Kind of working</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <header>
+  <div class="container text-center">
+    <div class="row">
+      <h1>Wars</h1>
+    </div>
+    <div class="row">
+      <h2>Lead your civilization to victory</h2>
+    </div>
+  </div>  
+</header>
+
+<section id="game-menu">
+    <div class="container text-center">
+    <div class="row">
+      <ul>
+        <li class="menu-button"><a href="#" id="start-game">Start Game</a></li>
+        <li class="menu-button"><a href="#" id="instructions">Instructions</a></li>
+      </ul>
+</section>
+      
+<section id="game-instructions">
+    <div class="container">
+    <div class="row">
+      <h3>WARS is a 2 player Turn Based Strategy Game</h3>
+       <p>The aim is to eliminate the opponent (for that you need to reduce your opponent's health to Zero)
+      </p>
+      <h4>You start off with some basic stats : </h4>
+      <ul>
+        <li>Health = 100 HP (MAX)<li>
+        <li>Attack = 20<li>
+        <li>Defence = 10<li>
+        <li>Money = 500 Coins<li>
+      </ul>
+      <h4>During your turn you can : </h4>
+      <ul>
+        <li>a) Build a :
+          <ul>
+            <li>1)Wall : It gives defence(+5) - Costs 60 Coins </li>
+            <li>2)Soldier : It gives attack(+7) - Costs 75 Coins </li>
+            <li>3)Indusry : Its generates money (by 20 Coins after each turn, more industries you have more money you generate ) - Costs 75 Coins </li>
+            <li>4)Farm : It regenerates Health(by 5HP after each turn,more farms you have more HP you regenerate) - Costs 80 Coins</li>
+          </ul>
+        </li>
+        <li>b) Attack the opponent</li>
+      </ul>
+      <div class="menu-button"><a href="#" id="main-menu">Back to Menu</a></div>
+</section>
+      
+<section id="main-game">
+    <div class="container">
+    <article id="PlayerStats">  
+    <div class="row">
+      <div class="col-md-6">
+      <div class="player player1">
+        <div>
+          <h3><span class="p1Name">Player1</span></h3>
+        </div>
+        <div id="p1Type">
+          <h4>The Sentinel</h4>
+        </div>
+        <div>
+          <h4>Health: <span class="p1Health1"></span> <span class="p1Health"></span></h4>
+        </div>
+        <div>
+          <h4>Attack: <span class="p1Attack">20</span></h4>
+        </div>
+        <div> 
+          <h4>Defence: <span class="p1Defence">10</span></h4>
+        </div>
+        <div>
+          <h4>Money: <span class="p1Money">500</span></h4>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6">
+      <div class="player player2">
+        <div>
+          <h3><span class="p2Name">Player2</span></h3>
+        </div>
+        <div id="p2Type">
+          <h4>The Scourge</h4>
+        </div>
+        <div>
+          <h4>Health: <span class="p2Health2"></span> <span class="p2Health"></span></h4>
+        </div>
+        <div>
+          <h4>Attack: <span class="p2Attack">20</span></h4>
+        </div>
+        <div> 
+          <h4>Defence: <span class="p2Defence">10</span></h4>
+        </div>
+        <div>
+          <h4>Money: <span class="p2Money">500</span></h4>
+        </div>
+      </div>
+      </div>
+       </div>
+       <div class="row">
+      <div class="menu-button"><a href="#" id="Enter-PS">Player Turn</a></div>
+    </div> 
+      <div class="row">
+      <div class="menu-button"><a href="#" id="main-menu-PS">Back to Menu</a></div>
+    </div>
+    </article>
+    <article id="Player1Turn">
+      <div class="row">
+        <div class="player player1">
+        <div>
+        <h3><span class="p1Name">Player1</span>'s Turn</h3>
+        </div>
+        <div>
+          <h4>The number of walls you have: <span class="p1Wall">0</span></h4>
+        </div>
+        <div>
+          <h4>The number of soldiers you have: <span class="p1Soldier">0</span></h4>
+        </div>
+        <div>
+          <h4>The number of industries you have: <span class="p1Industry">0</span></h4>
+        </div>
+        <div>
+          <h4>The number of farms you have: <span class="p1Farm">0</span></h4>
+        </div>
+        <div class="Turn-Menu">
+          <h3>Menu: </h3>
+          <ul>
+            <li>1) Build a wall</li>
+            <li>2) Create a soldier</li>
+            <li>3) Start an industry</li>
+            <li>4) Start a farm</li>
+            <li>5) Attack opponent</li>
+            <li>Enter your choice: <input type="number" min="1" max="5" id="p1Input" value="1" /></li>
+          </ul>  
+        </div>  
+      </div>  
+      </div>
+      <div class="row">
+      <div class="menu-button"><a href="#" id="Enter-p1">Enter</a></div>
+    </div> 
+      <div class="row">
+      <div class="menu-button"><a href="#" id="main-menu-P1">Back to Menu</a></div>
+    </div>
+    </article>  
+    <article id="Player2Turn">
+      <div class="row">
+        <div class="player player2">
+        <div>
+        <h3><span class="p2Name">Player2</span>'s Turn</h3>
+        </div>
+        <div>
+          <h4>The number of walls you have: <span class="p2Wall">0</span></h4>
+        </div>
+        <div>
+          <h4>The number of soldiers you have: <span class="p2Soldier">0</span></h4>
+        </div>
+        <div>
+          <h4>The number of industries you have: <span class="p2Industry">0</span></h4>
+        </div>
+        <div>
+          <h4>The number of farms you have: <span class="p2Farm">0</span></h4>
+        </div>
+        <div class="Turn-Menu">
+          <h3>Menu: </h3>
+          <ul>
+            <li>1) Build a wall</li>
+            <li>2) Create a soldier</li>
+            <li>3) Start an industry</li>
+            <li>4) Start a farm</li>
+            <li>5) Attack opponent</li>
+            <li>Enter your choice: <input type="number" min="1" max="5" id="p2Input" value="1" /></li>
+          </ul>  
+        </div>  
+      </div>  
+      </div>
+      <div class="row">
+      <div class="menu-button"><a href="#" id="Enter-p2">Enter</a></div>
+    </div> 
+      <div class="row">
+      <div class="menu-button"><a href="#" id="main-menu-P2">Back to Menu</a></div>
+    </div>
+    </article>  
+    </div>  
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
