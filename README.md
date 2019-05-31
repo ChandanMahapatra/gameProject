@@ -13,6 +13,6 @@ Old C++ code is here:
 
 ## Game Screenshots
 
-![Game Main Screen]()
+![Game Main Screen](https://github.com/ChandanMahapatra/gameProject/blob/old-game-v2/1.png)
 
-![Gameplay Screen]()
+![Gameplay Screen](https://github.com/ChandanMahapatra/gameProject/blob/old-game-v2/2.png)
