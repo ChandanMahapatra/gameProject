@@ -26,13 +26,13 @@ h1 {
 
 h2 {
   color: #1F2D45;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: "Press Start 2P";
 }
 
 h3 {
   color: #1F2D45;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: "Press Start 2P";
   margin-bottom: 40px;
   line-height: 1.6em;
@@ -58,6 +58,13 @@ li {
   font-size: 1em;
   font-family: "Press Start 2P";
   margin: 5px;
+}
+
+.authors {
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
 }
 
 /* Game Header Section */

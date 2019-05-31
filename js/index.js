@@ -151,6 +151,13 @@
                               if(dam>0)
                                   {
                                     playerHealth[i+1]-= dam;
+                                    if(playerHealth[i+1]<=0)
+                                      {
+                                        console.log("Game Over");
+                                        console.log("Player 1 Health: " + playerHealth[0]);
+                                        console.log("Player 2 Health: " + playerHealth[1]);
+                                        alert("Player 1 Wins");
+                                      }
                                   }  
                             }
                             else
@@ -169,6 +176,13 @@
                               if(dam>0)
                                 {
                                     playerHealth[i-1]-= dam;
+                                    if(playerHealth[i-1]<=0)
+                                      {
+                                        console.log("Game Over");
+                                        console.log("Player 1 Health: " + playerHealth[0]);
+                                        console.log("Player 2 Health: " + playerHealth[1]);
+                                        alert("Player 2 Wins");
+                                      }
                                 }
                             }
                             else
