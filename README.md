@@ -8,3 +8,8 @@ Check it out online:
 
 Old C++ code is here:
 (https://github.com/ChandanMahapatra/gameProject/blob/old-game-v1/gameCode.txt)
+
+
+![Game Main Screen](https://raw.githubusercontent.com/ChandanMahapatra/gameProject/old-game-v1/1.bmp)
+
+![Gameplay Screen](https://raw.githubusercontent.com/ChandanMahapatra/gameProject/old-game-v1/3.bmp)
